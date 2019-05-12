@@ -11,6 +11,15 @@ SQLAlchemy : The Python SQL Toolkit and Object Relational Mapper<br>
 # pymysql
 # https://docs.sqlalchemy.org/en/13/dialects/mysql.html?highlight=mysql#module-sqlalchemy.dialects.mysql.pymysql
 engine = create_engine('mysql+pymysql://<username>:<password>@<host>/<dbname>[?<options>]', echo=True)
+...
+class User(Base):
+    __tablename__ = 'users'
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String(10))
+    fullname = Column(String(10))
+    nickname = Column(String(10))
+...
 ```
 
 # Reference
