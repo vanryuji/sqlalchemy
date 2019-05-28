@@ -2,7 +2,7 @@
 About sqlite engine
 
 # Environments
-SQLAlchemy 1.3.3
+* SQLAlchemy 1.3.3
 
 # Foreign Key
 SQLite supports FOREIGN KEY syntax when emitting CREATE statements for tables, however by default these constraints have no effect on the operation of the table.<br>
